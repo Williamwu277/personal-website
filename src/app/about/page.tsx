@@ -21,10 +21,7 @@ export default function About() {
                 Hi there! I&apos;m William, and this is a short summary of what I&apos;ve been up to:
                 <ul className="list-disc w-11/12 text-sm mb-2 mt-2 ml-8 space-y-1">
                     <li>
-                        Incoming third year studying Computer Science at <Emphasis href="https://uwaterloo.ca" image={waterlooLogo}>U of Waterloo</Emphasis>
-                    </li>
-                    <li>
-                        Full-Stack Software Engineering Intern at <Emphasis href="https://www.roblox.com/Login" image={robloxLogo}>Roblox</Emphasis> in San Mateo
+                        Third year studying Computer Science at <Emphasis href="https://uwaterloo.ca" image={waterlooLogo}>U of Waterloo</Emphasis>
                     </li>
                     <li>
                         Co-Director of the autonomous Rover Team in <Emphasis href="https://www.watonomous.ca" image={watonomousLogo}>WATOnomous</Emphasis>
@@ -32,6 +29,9 @@ export default function About() {
                 </ul>
                 Previously:
                 <ul className="list-disc w-11/12 text-sm mb-2 mt-2 ml-8 space-y-1">
+                    <li>
+                        Full-Stack Software Engineering Intern at <Emphasis href="https://www.roblox.com/Login" image={robloxLogo}>Roblox</Emphasis> in San Mateo
+                    </li>
                     <li>
                         Software Developer at <Emphasis href="https://www.leapap.com" image={leapAPLogo}>LeapAP</Emphasis>, where I worked on web-scrapers
                     </li>
