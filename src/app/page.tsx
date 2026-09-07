@@ -41,10 +41,7 @@ export default function Home() {
           </svg>
         </motion.div>
       )}
-      <div
-        onClick={()=>{}}
-        className={"flex flex-col gap-y-4 md:gap-y-8 bg-frontpage w-full h-[100dvh] items-center place-content-center font-clean "}
-      >
+      <div className={"flex flex-col gap-y-4 md:gap-y-8 bg-frontpage w-full h-[100dvh] items-center place-content-center font-clean"}>
         {/* Picture frame animations */}
         <div className="grid grid-cols-2 md:grid-cols-[auto_auto_auto_auto] px-10 md:px-20 my-2 md:mt-10 gap-x-3 gap-y-3 md:gap-x-5 md:gap-y-5 place-items-center w-fit md:h-[250px] ">
           {
