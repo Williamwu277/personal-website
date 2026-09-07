@@ -13,9 +13,11 @@ export default function Navbar() {
   const sections = ["About", "Projects", "Timeline", "Blog"];
 
   useEffect(() => {
-    setTimeout(() => {
-      toggleDisableNav(false);
-    }, 3500);
+    if(pathname === "/"){
+        setTimeout(() => toggleDisableNav(false), 5000);
+    }else{
+        toggleDisableNav(false);
+    }
   }, []);
 
   return (
@@ -28,7 +30,7 @@ export default function Navbar() {
           onClick={() => {
             if (pathname !== "/") {
               toggleDisableNav(true);
-              setTimeout(() => toggleDisableNav(false), 3750);
+              setTimeout(() => toggleDisableNav(false), 5000);
             }
           }}
         >
@@ -45,7 +47,7 @@ export default function Navbar() {
                     toggleHandler();
                     toggleDisableNav(true);
                     setTimeout(() => router.push(`/${v.toLowerCase()}`), 3000);
-                    setTimeout(() => toggleDisableNav(false), 3750);
+                    setTimeout(() => toggleDisableNav(false), 4000);
                   }
                 }}
                 className={"hover-grow"}

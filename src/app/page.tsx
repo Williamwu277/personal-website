@@ -1,7 +1,6 @@
 'use client';
 import { motion } from "framer-motion";
-import { useState, useContext } from "react";
-import { useRouter } from "next/navigation";
+import { useContext } from "react";
 import { PageContext } from "../ui/providers";
 import frontPage1 from "../assets/frontPage1.jpg";
 import frontPage2 from "../assets/frontPage2.jpg";
@@ -16,19 +15,7 @@ export default function Home() {
   const words: Array<string> = ["WELCOME", "TO ", "MY ", "WORLD"];
   const name: Array<string> = ["w", "i", "l", "l", "i", "a", "m", " ", "w", "u"];
   const images: StaticImageData[] = [frontPage1, frontPage2, frontPage3, frontPage4];
-  const router = useRouter();
-  const [clickable, setClickable] = useState(false);
-  const { toggleAnimation, toggleHandler, toggleDisableNav } = useContext(PageContext);
-
-  function handlePageTransition() {
-    if (clickable) {
-      setClickable(false);
-      toggleHandler();
-      toggleDisableNav(true);
-      setTimeout(() => router.push(`/about`), 3000);
-      setTimeout(() => toggleDisableNav(false), 3500);
-    }
-  }
+  const { toggleAnimation } = useContext(PageContext);
 
   return (
     <div className="overflow-x-hidden">
@@ -55,8 +42,8 @@ export default function Home() {
         </motion.div>
       )}
       <div
-        onClick={handlePageTransition}
-        className={"flex flex-col gap-y-4 md:gap-y-8 bg-frontpage w-full h-[100dvh] items-center place-content-center font-clean " + (clickable ? "cursor-pointer" : "")}
+        onClick={()=>{}}
+        className={"flex flex-col gap-y-4 md:gap-y-8 bg-frontpage w-full h-[100dvh] items-center place-content-center font-clean "}
       >
         {/* Picture frame animations */}
         <div className="grid grid-cols-2 md:grid-cols-[auto_auto_auto_auto] px-10 md:px-20 my-2 md:mt-10 gap-x-3 gap-y-3 md:gap-x-5 md:gap-y-5 place-items-center w-fit md:h-[250px] ">
@@ -95,11 +82,6 @@ export default function Home() {
                     animate={{ opacity: 1 }}
                     initial={{ opacity: 0 }}
                     transition={{ duration: 0.5, delay: (index + 1) * 0.5 }}
-                    onAnimationComplete={
-                      () => {
-                        if (index == 3) setClickable(true);
-                      }
-                    }
                     className={(index == 3 ? "text-textmedium " : "text-textlight ") + "text-4xl lg:text-5xl font-title"}
                   >
                     {word}
@@ -129,7 +111,7 @@ export default function Home() {
                       strokeWidth={3}
                       initial={{ pathLength: 0 }}
                       animate={{ pathLength: 1 }}
-                      transition={{ duration: 3, ease: "easeInOut", delay: 2.5 }}
+                      transition={{ duration: 2.5, ease: "easeInOut", delay: 2.5 }}
                     />
                   </motion.svg>
                 );
