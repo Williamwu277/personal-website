@@ -12,6 +12,7 @@ import portfolioPicture from "../../assets/portfolioPicture.jpg";
 import portfolioRePromptThat from "../../assets/portfolioRePromptThat.jpg";
 import portfolioWatoRover from "../../assets/portfolioWatoRover.jpg";
 import portfolioVM from "../../assets/portfolioVM.jpg";
+import portfolioObserver from "../../assets/portfolioObserver.jpg";
 
 export const metadata: Metadata = {
     title: "Projects"
@@ -19,6 +20,15 @@ export const metadata: Metadata = {
 
 // Twelve projects maximum? (To maintain quality)
 const projects = [
+    {
+        name: "Observer",
+        desc: "An engineering internship scraper, which scans across 30+ careers sites for new listings daily to notify me on Discord. Includes automatic scraper failure detection capabilities for reduced manual monitoring and maximal uptime.",
+        src: portfolioObserver,
+        github: "",
+        links: [],
+        announcements: ["Deployed"],
+        tags: ["Python", "Playwright"]
+    },
     {
         name: "Vim-like Text Editor",
         desc: "Final project for CS246E (enriched). Created a Vim-like text editor with syntax highlighting, commands and separate modes. Implemented utilizing C++ and design patterns such as MVC.",
