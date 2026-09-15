@@ -42,7 +42,7 @@ const jobData: Job[] = [
     },
     {
         desc: "WATonomous Autonomy Developer",
-        dates: "Feb 2025 - Present",
+        dates: "Feb 2025 - Aug 2026",
         src: watonomousLogo,
         url: "https://www.watonomous.ca"
     },

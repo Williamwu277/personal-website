@@ -14,7 +14,7 @@ export default function Navbar() {
 
   useEffect(() => {
     if(pathname === "/"){
-        setTimeout(() => toggleDisableNav(false), 5000);
+        setTimeout(() => toggleDisableNav(false), 4000);
     }else{
         toggleDisableNav(false);
     }
@@ -30,7 +30,7 @@ export default function Navbar() {
           onClick={() => {
             if (pathname !== "/") {
               toggleDisableNav(true);
-              setTimeout(() => toggleDisableNav(false), 5000);
+              setTimeout(() => toggleDisableNav(false), 4000);
             }
           }}
         >
