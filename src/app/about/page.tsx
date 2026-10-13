@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import Image from "next/image";
-import Link from "next/link";
 import Emphasis from "../../ui/emphasis";
 import profileImage from "../../assets/portfolioImage.jpg";
 import robloxLogo from "../../assets/logos/robloxLogo.jpg";
