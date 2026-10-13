@@ -8,6 +8,7 @@ import leapAPLogo from "../../assets/logos/leapAPLogo.jpg";
 import DMOJLogo from "../../assets/logos/DMOJLogo.jpg";
 import watonomousLogo from "../../assets/logos/watonomousLogo.jpg";
 import waterlooLogo from "../../assets/logos/waterlooLogo.jpg";
+import personaLogo from "../../assets/logos/personaLogo.jpg";
 import grandmasterTft from "../../assets/tftGrandmaster.png";
 
 export const metadata: Metadata = {
@@ -23,11 +24,14 @@ export default function About() {
                     <li>
                         Third year studying Computer Science at <Emphasis href="https://uwaterloo.ca" image={waterlooLogo}>U of Waterloo</Emphasis>
                     </li>
+                    <li>
+                        Incoming Software Engineering Intern at <Emphasis href="https://withpersona.com" image={personaLogo}>Persona</Emphasis> for Winter 2027
+                    </li>
                 </ul>
                 Previously:
                 <ul className="list-disc w-11/12 text-sm mb-2 mt-2 ml-8 space-y-1">
                     <li>
-                        Full-Stack Software Engineering Intern at <Emphasis href="https://www.roblox.com/Login" image={robloxLogo}>Roblox</Emphasis> in San Mateo
+                        Software Engineering Intern at <Emphasis href="https://www.roblox.com/Login" image={robloxLogo}>Roblox</Emphasis> on the Creator Trust team
                     </li>
                     <li>
                         Co-Director of the <Emphasis href="https://www.watonomous.ca" image={watonomousLogo}>WATOnomous</Emphasis> autonomous Rover Team
@@ -48,8 +52,6 @@ export default function About() {
                         Teamfight Tactics, where I peaked <Emphasis image={grandmasterTft} currentTab>Grandmaster 796 LP</Emphasis>, or rank 420 (top 0.06%), in North America during Set 16
                     </li>
                 </ul>
-                You can take a look at my <Link href="/projects" className="inline-block hover-grow emphasis">Projects</Link>, <Link href="/timeline" className="inline-block hover-grow emphasis">Timeline</Link>, or <Emphasis href="/ResumeWilliam.pdf">Resume</Emphasis> for 
-                more details and contact info. Don&apos;t hesitate to reach out!
             </div>
             <hr className="w-3/4 h-0.25 border-slate-400 mb-1"></hr>
             <Image

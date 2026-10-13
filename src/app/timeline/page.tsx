@@ -5,6 +5,7 @@ import leapAPLogo from "../../assets/logos/leapAPLogo.jpg";
 import watonomousLogo from "../../assets/logos/watonomousLogo.jpg";
 import DMOJLogo from "../../assets/logos/DMOJLogo.jpg";
 import robloxLogo from "../../assets/logos/robloxLogo.jpg";
+import personaLogo from "../../assets/logos/personaLogo.jpg";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -29,25 +30,31 @@ type Achievement = {
 
 const jobData: Job[] = [
     {
-        desc: "Software Engineering Intern",
+        desc: "Persona Software Engineering Intern",
+        dates: "Incoming Winter 2027",
+        src: personaLogo,
+        url: "https://withpersona.com"
+    },
+    {
+        desc: "Roblox, Software Engineering Intern",
         dates: "May 2026 - Aug 2026",
         src: robloxLogo,
         url: "https://about.roblox.com"
     },
     {
-        desc: "LeapAP Software Developer Co-op",
+        desc: "LeapAP, Software Developer Co-op",
         dates: "May 2025 - Aug 2025",
         src: leapAPLogo,
         url: "https://www.leapap.com"
     },
     {
-        desc: "WATonomous Autonomy Developer",
+        desc: "WATonomous, Autonomy Developer",
         dates: "Feb 2025 - Aug 2026",
         src: watonomousLogo,
         url: "https://www.watonomous.ca"
     },
     {
-        desc: "DMOJ Contest Organizer",
+        desc: "DMOJ, Contest Organizer",
         dates: "May 2021 - Feb 2023",
         src: DMOJLogo,
         url: "https://dmoj.ca"
