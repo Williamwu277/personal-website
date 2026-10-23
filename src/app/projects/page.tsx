@@ -22,10 +22,10 @@ export const metadata: Metadata = {
 const projects = [
     {
         name: "Observer",
-        desc: "An engineering internship scraper, which scans across 30+ careers sites for new listings daily to notify me on Discord. Includes automatic scraper failure detection capabilities for reduced manual monitoring and maximal uptime.",
+        desc: "An engineering internship scraper that scans across 30+ careers sites daily for new listings. Includes automatic scraper failure detection capabilities for reduced manual monitoring and maximal uptime.",
         src: portfolioObserver,
-        github: "",
-        links: [],
+        github: "https://github.com/Williamwu277/observer",
+        links: ["https://docs.google.com/spreadsheets/d/1uaIL-RzYQ-UVAvO1WBw-80VvS5ZJsFJDfAyMEDXLtJ4/edit?gid=0#gid=0"],
         announcements: ["Deployed"],
         tags: ["Python", "Playwright"]
     },
